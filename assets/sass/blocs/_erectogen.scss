@@ -1,0 +1,42 @@
+.erectogen {
+    margin-top: 100px;
+    position: relative;
+    &::before {
+        @include blur;
+        top: 0;
+        left: -650px;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    h3 {
+        display: inline-block;
+    }
+    span {
+        color: #0860f8;
+    }
+    .woman-man {
+        margin: 50px 0px 20px -120px;
+        filter: brightness(0.8);
+    }
+
+    &__wrapper {
+        column-count: 2;
+        margin: 60px auto 0 auto;
+    }
+    &__item {
+        max-width: 430px;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+        margin: 10px 20px 30px 20px;
+    }
+}

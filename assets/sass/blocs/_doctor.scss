@@ -1,0 +1,67 @@
+.doctor {
+    position: relative;
+    margin-top: 95px;
+    background: url(../../assets/img/bg-doctor.png) center center/cover
+        no-repeat;
+    overflow-x: hidden;
+    &::before {
+        @include blur;
+        top: 0;
+        left: -650px;
+    }
+    &::after {
+        @include blur;
+        top: 0;
+        right: -650px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    &__column {
+        width: calc(50% - 25px);
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        img {
+            width: 100%;
+        }
+    }
+
+    h4 {
+        margin: 10px 0;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        color: #9f9f9f;
+    }
+
+    &__text {
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #fff;
+        margin: 50px 0;
+        &:before {
+            position: absolute;
+            content: '\201d';
+            line-height: 40px;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            font-size: 50px;
+            color: #0860f8;
+        }
+    }
+}

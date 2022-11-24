@@ -1,0 +1,135 @@
+.about {
+    position: relative;
+    margin-top: 100px;
+    overflow-x: hidden;
+    &::after {
+        @include blur;
+        top: 0;
+        right: -650px;
+    }
+    &__wrapper {
+        display: flex;
+        gap: 30px;
+        margin-top: 180px;
+        align-items: baseline;
+    }
+    &__item {
+        position: relative;
+        width: 380px;
+        height: 565px;
+        border-radius: 20px;
+        &-main {
+            position: relative;
+            width: 380px;
+            height: 755px;
+            background: #0860f8;
+            border-radius: 10px;
+            padding: 110px 30px 30px 30px;
+        }
+    }
+
+    // &__img {
+    //     position: absolute;
+    //     top: -255px;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     &-main {
+    //         position: absolute;
+    //         left: 50%;
+    //         transform: translateX(-50%);
+    //         top: -160px;
+    //     }
+    // }
+
+    .green {
+        position: relative;
+        width: 380px;
+        height: 101px;
+        background: #83a82f;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+            content: '';
+            background: url(../../assets/img/medicin.png) center no-repeat;
+            position: absolute;
+            top: -265px;
+            left: 50%;
+            width: 100%;
+            height: 307px;
+            transform: translateX(-50%);
+        }
+    }
+    .blue {
+        position: relative;
+        width: 380px;
+        height: 101px;
+        background: #065aa3;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+            content: '';
+            background: url(../../assets/img/viagra.png) center no-repeat;
+            position: absolute;
+            top: -265px;
+            left: 50%;
+            width: 100%;
+            height: 307px;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 26px;
+        text-align: center;
+        color: #fff;
+
+        &-center {
+            position: relative;
+            width: 320px;
+            height: 60px;
+            background: #fff;
+            border-radius: 10px;
+            font-size: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            margin-top: 40px;
+            &::before {
+                content: '';
+                background: url(../../assets/img/erectogen-sm.png) center
+                    no-repeat;
+                position: absolute;
+                top: -305px;
+                left: 50%;
+                width: 100%;
+                height: 307px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+        margin: 20px;
+    }
+    button {
+        width: 320px;
+        height: 60px;
+        background: #fee60d;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+    }
+}
